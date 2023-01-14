@@ -32,7 +32,7 @@ document.querySelector(".guess-check").addEventListener("click", function (){
             document.querySelector(".life").innerText = life-=1;
         }
         else if (life == 1){
-            document.querySelector(".info-txt").innerText = `Oh... So you can't guessed the number right... Maybe another time... `;
+            document.querySelector(".info-txt").innerText = `Oh... So you couldn't get the number right... Maybe another time...`;
             document.querySelector(".reaction-txt").innerText = "Kokomi is disappointed...";
             document.querySelector(".reaction-img").src = "./img/wrong.png";
             document.querySelector(".guess-input").classList.add("hide");
@@ -42,10 +42,10 @@ document.querySelector(".guess-check").addEventListener("click", function (){
         else if (answer > randomnum){
             topp = answer;
             if (answer - randomnum < randomnum - bottom) {
-                document.querySelector(".info-txt").innerText = `You guessed closer! Try a bit lower!`;
+                document.querySelector(".info-txt").innerText = `So close! Try lower!`;
                 document.querySelector(".reaction-img").src = "./img/closer.png";
             } else {
-                document.querySelector(".info-txt").innerText = `You guessed farther! Try more lower!`;
+                document.querySelector(".info-txt").innerText = `That's too high! Try lower!`;
                 document.querySelector(".reaction-img").src = "./img/farther.png";
             }
             document.querySelector(".reaction-txt").innerText = `Kokomi pointing out: number is between ${bottom} and ${topp}!`;
@@ -56,10 +56,10 @@ document.querySelector(".guess-check").addEventListener("click", function (){
         else if (answer < randomnum){
             bottom = answer;
             if (randomnum - answer < topp - randomnum) {
-                document.querySelector(".info-txt").innerText = `You guessed close! Try a bit higher!`;
+                document.querySelector(".info-txt").innerText = `So close! Try higher!`;
                 document.querySelector(".reaction-img").src = "./img/closer.png";
             } else {
-                document.querySelector(".info-txt").innerText = `You guessed far! Try more higher!`;
+                document.querySelector(".info-txt").innerText = `That's too low! Try higher!`;
                 document.querySelector(".reaction-img").src = "./img/farther.png";
             }
             document.querySelector(".reaction-txt").innerText = `Kokomi pointing out: number is between ${bottom} and ${topp}!`;
