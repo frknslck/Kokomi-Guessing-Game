@@ -43,6 +43,7 @@ body{
 }
 
 .guess-input{
+    width: 200px;
     border: none;
     height: 30px;
     border-radius: 15px;
@@ -131,5 +132,58 @@ input::-webkit-inner-spin-button {
     }
     50%{
         transform: scale(1.1)
+    }
+}
+
+@media only screen and (max-width : 540px) {
+    body{
+        overflow: visible;
+    }
+    .info{
+        height: 30vh;
+        font-size: 1rem;
+    }
+    .info-txt{
+        font-size: 1rem;
+        color: #262c9f;
+    }
+    .info-warning{
+        font-size: 1rem;
+        color: #262c9f;
+        animation: vibration infinite ease 0.5s;
+    }
+    .guess{
+        height: 10vh;
+        width: 100%;
+    }
+    .guess-input{
+        width: 150px;
+        height: 30px;
+    }
+    .guess-num{
+        font-size: 1rem;
+    }
+    .guess-check{
+        padding: 2px;
+    }
+    .guess-retry{
+        padding: 2px;
+    }
+    .reaction{
+        height: 60vh;
+        margin: 10px;
+    }
+    .reaction-img{
+        height: 200px;
+        animation: scale 2s linear infinite;
+    }
+    .reaction-txt{
+        font-size: 1rem;
+    }
+    .reaction-life{
+        font-size: 1rem;
+    }
+    .life{
+        font-size: 2rem;
     }
 }
