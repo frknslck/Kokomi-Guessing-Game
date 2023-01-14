@@ -5,6 +5,7 @@ let topp = 100;
 let closer;
 let further;
 let input = document.querySelector(".guess-input");
+let rannum = document.querySelector(".randomnum");
 
 console.log(randomnum);
 
@@ -30,6 +31,8 @@ document.querySelector(".guess-check").addEventListener("click", function (){
             document.querySelector(".guess-input").classList.add("hide");
             document.querySelector(".guess-check").classList.add("hide");
             document.querySelector(".life").innerText = life-=1;
+            document.querySelector(".guess-num").classList.remove("hide");
+            rannum.innerText = randomnum;
         }
         else if (life == 1){
             document.querySelector(".info-txt").innerText = `Oh... So you couldn't get the number right... Maybe another time...`;
@@ -38,6 +41,8 @@ document.querySelector(".guess-check").addEventListener("click", function (){
             document.querySelector(".guess-input").classList.add("hide");
             document.querySelector(".guess-check").classList.add("hide");
             document.querySelector(".life").innerText = life-=1;
+            document.querySelector(".guess-num").classList.remove("hide");
+            rannum.innerText = randomnum;
         }
         else if (answer > randomnum){
             topp = answer;
