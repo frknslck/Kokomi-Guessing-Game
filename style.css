@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&family=Ubuntu:wght@400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    overflow: hidden;
+    background: rgb(38,44,159);
+    background: linear-gradient(0deg, rgba(38,44,159,1) 0%, rgba(249,229,224,1) 65%);
+}
+
+.info{
+    height: 20vh;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.info-txt{
+    font-size: 1.75rem;
+    padding-top: 1rem;
+    color: #262c9f;
+}
+
+.info-warning{
+    padding-top: 1rem;
+    font-size: 1.75rem;
+    color: #262c9f;
+    animation: vibration infinite ease 0.5s;
+}
+
+.guess{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transform: scale(1.5);
+}
+
+.guess-input{
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 10px;
+    outline: none;
+}
+
+/* .guess-input:focus{
+    outline: none;
+} */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.guess-check{
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.guess-retry{
+    padding: 5px 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.reaction{
+    overflow: visible;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.reaction-img{
+    animation: scale 2s linear infinite;
+}
+
+.reaction-txt{
+    color: white;
+    font-size: 2rem;
+}
+
+.reaction-life{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.life{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#f9e5e0;  
+}
+
+.hide{
+    display:none;
+}
+
+@keyframes vibration{
+    0%{
+        transform: translateX(-10px)
+    }
+    50%{
+        transform: translateX(20px)
+    }
+    100%{
+        transform: translateX(-10px)
+    }
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(1.0)
+    }
+    50%{
+        transform: scale(1.1)
+    }
+}

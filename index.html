@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kokomi Guessing Game</title>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="info">
+            <h1 class="info-h1">Please Enter a Number Between 0-100 (^-^*)</h1>
+            <h2 class="info-txt">Hello Adventurer! Please guess the number that in my mind!</h2>
+            <h2 class="info-warning hide">Please follow the rules of the game!</h2>
+        </div>
+        <div class="guess">
+            <input type="number" class="guess-input">
+            <button type="button" class="guess-check" >CHECK</button>
+            <button type="button" class="guess-retry"><i class="fa-solid fa-arrows-rotate"></i></button>
+        </div>
+        <div class="reaction">
+            <img class="reaction-img" src="./img/waiting.png" alt="kokomi">
+            <p class="reaction-txt">Kokomi is so excited about your guesses!</p>
+            <p class="reaction-life">Guesses Left: <span class="life">5</span></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
